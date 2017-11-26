@@ -12,11 +12,11 @@ const rp = require('request-promise');
 const _ = require('lodash');
 
 const User = {
-    username: '',
-    password: ''
+    username: 'bennypurbaa',
+    password: 'sibenny18'
 }
 
-const TargetUsername = '';
+const TargetUsername = 'anakmedan_hits';
 
 const Login = async function(User){
 
@@ -141,6 +141,6 @@ const Excute = async function(User, TargetUsername, TextComment){
 
 }
 
-const TextComment = "Follow Back Kak :D";
-const TextDM = 'Follback Kak :D';
+const TextComment = "Follow Backnya jangan pelit yaaww :D";
+const TextDM = 'Follow Backnya jangan pelit yaawwk :D';
 Excute(User,TargetUsername,TextComment);
