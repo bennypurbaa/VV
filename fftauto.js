@@ -16,7 +16,7 @@ const User = {
     password: 'sibenny18',
 }
 
-const TargetUsername = 'anakmedan_hits';
+const TargetUsername = 'anakusu';
 
 const Login = async function(User){
 
@@ -112,12 +112,12 @@ const Excute = async function(User, TargetUsername, TextComment){
 					await Client.Relationship.create(doLogin.session, account.id);
 					console.log(chalk`{bold.green [+|Followed]} ({bold.cyan ${account.username}}) ${account.id}`);
 				}));
-				console.log(chalk`{bold.yellow [!]} Delay For 30000 Milisecond (30 Seconds) To Send DM`);
-				await delay(30000);
-				await Promise.all(account[i].map(async(account) => {
-					await Client.Thread.configureText(doLogin.session, account.id, TextDM);
-					console.log(chalk`{bold.green [+|Send DM]} ({bold.cyan ${account.username}}) ${account.id}`);
-				}))
+//				console.log(chalk`{bold.yellow [!]} Delay For 30000 Milisecond (30 Seconds) To Send DM`);
+//				await delay(30000);
+//				await Promise.all(account[i].map(async(account) => {
+//					await Client.Thread.configureText(doLogin.session, account.id, TextDM);
+//					console.log(chalk`{bold.green [+|Send DM]} ({bold.cyan ${account.username}}) ${account.id}`);
+//				}))
 				console.log(chalk`{bold.yellow [!]} Delay For 30000 Milisecond (30 Seconds) To Send Comment`);
 				await delay(30000);
 				await Promise.all(account[i].map(async(account) => {
@@ -141,6 +141,6 @@ const Excute = async function(User, TargetUsername, TextComment){
 
 }
 
-const TextComment = "Follow Backnya jangan pelit yaaww :D";
+const TextComment = "Follow Backnya kawan :D";
 const TextDM = 'Follow Backnya jangan pelit yaawwk :D';
 Excute(User,TargetUsername,TextComment);
